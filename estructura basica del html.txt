@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<hmtl lang="es">
+<head>
+		<meta charset="UTF-8"/>
+		<title> ejercicio 1 </title>
+	</head>
+	<body>
+<-- Los h1 al h6 seran claramente los titulos para crear unos niveles 
+		<h1> este es mi primer parrafo </h1>            
+		<main>
+			<h2> buenas mi nombre es... </h2>
+		</main>
+			<h5> <p>Cuando se creo esta web? <br/> Simón <br/> Aguilar</p> </h5>
+	</body>
+</html>
