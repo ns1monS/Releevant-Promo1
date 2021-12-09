@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>EjercicioFormularios1</title>
+	</head>
+	<body>
+		<p> Vamos a realizar una pequeña encuesta sobre las personas que han pasado el covid </p>
+		<form>
+			Introduzca su nombre <br/>
+			<input type="text" for="text"="correo" method="get"> <br/>
+			Seleccione su genero <br/>
+			<input
+				type="radio" name="genero" id="masculino" value="masculino" checked
+			>
+			<label for="masculino">
+				Masculino
+			</label>
+			<input type="radio" name="genero" value="femenino">
+				Femenino
+			<input type="radio" name="genero" value="otro">
+				Otro
+				
+			<br/><br/>
+			
+			Introduzca su correo electronico para enviar sus resultados
+			<input type="text" for="text" name="correo" method="get"> 
+		
+		<br/><br/>
+			
+			Seleccione un archivo para enviar 
+			<input type="file" name="archivo">
+			
+		<br/><br/>
+			
+			Ha pasado el covid?
+		<br/>
+			<select name="cercania" id="cercania">
+									<optgroup label="ha pasado el vocid?">
+										<option value="SI" selected>SI</option>
+										<option value="NO">NO</option>
+									</optgroup>
+								</select>
+		<br/><br/>
+			Algun familiar suyo lo ha pasado?
+		<br/>
+			<select name="cercania" id="cercania">
+									<optgroup label="ha pasado el vocid algun familiar suyo ?">
+										<option value="SI" selected>si</option>
+										<option value="NO">no </option>
+									</optgroup>
+								</select>
+		<br/><br/>
+			 
+		</form>
+	</body>
+</html>

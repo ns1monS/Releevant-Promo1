@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> Titulo </title>
+	</head>
+	<body>
+
+		<h2>Ejercicio1</h2>
+
+		<table	border="4"
+				cellpadding=""
+				cellspacing=""
+				width="auto%"
+				height="auto%"
+				align=""
+				bgcolor=""
+				background=""
+				bordercolor="red"
+		>
+				<tbody>
+				  <tr>
+					<th rowspan="3">Es noche</th>
+					<th rowspan="3">De</th>
+					<th rowspan="3">Free Fire</th>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+				  </tr>
+				  <tr>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+				  </tr>
+				   <tr>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+					<td>Es noche de Freefire</td>
+				  </tr>
+				</tbody>
+		</table>
+
+		<p></p>
+
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> EjerciciosListas4</title>
+	</head>
+	<body>
+		<ol  type="A" start="V"> 
+			<li>
+				<a href="car1/pepe.jpg"> <i>Aqui hay un pepo ruso</i>
+			</li>
+			<li>
+				<i></i>
+			</li>
+			<li>
+				<i></i>
+			</li>
+			<li>
+				<i></i>
+			</li>
+		</ol>
+	</body>
+</html>

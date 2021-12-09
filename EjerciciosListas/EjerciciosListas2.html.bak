@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> EjerciciosListas2</title>
+	</head>
+	<body>
+		<ol> 
+			<li><a href="../Apuntes-HTML-Releevant/1-estructura-html.html" 
+			rel="next" target="_blank"> Ver la estructura básica </a>
+			</li>
+		</ol>
+	
+
+	</body>
+</html>

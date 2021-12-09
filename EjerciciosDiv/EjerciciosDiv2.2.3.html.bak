@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Estaes la pagina 2 del 1 </title>
+		<link rel="StyleSheet"  HREF="codigo.css" TYPE="text/css">
+	</head>
+	<body>
+		<div>
+			<p class="one" > primer parrafo  <img src="canela.jpg" height="200px" width="200px"</p>
+			<p class="three"> segundo parrafo  <img src="canela.jpg" height="200px" width="200px"</p>
+		</DIV>
+	
+		
+	</body>
+</html>

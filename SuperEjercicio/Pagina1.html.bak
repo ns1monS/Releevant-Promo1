@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Página 1	</title>
+	</head>
+	<body>
+		<h1> 
+			El encabezado será este
+		</h1>
+		<p>
+			<b> pepe pepe </b> <u> <font color=red>pepe</font>
+			<font color=blue>pepe</font> <font color=yellow>pepe 
+			</font> </u> pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe pepe pepe pepe pepe 
+			pepe pepe pepe pepe pepe pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe pepe pepe pepe pepe 
+			pepe pepe pepe pepe pepe pepe pepe pepe pepe pepe 
+		</p>
+		<p>
+			<i> pepe pepe pepe </i> <b>pepe </b>
+			<i> <b>pepe </b> </i> pepe
+			pepe pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe pepe
+		</p>
+		<p>
+			<s>pepe pepe pepe pepe pepe </s>
+		<br/>
+			pepe <u><sup>ELPEPE</sup></u>
+			pepe pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe
+			pepe pepe pepe pepe pepe pepe
+		</p>
+		<p>
+			<i><mark>pepe pepe</mark> <u>p
+			epe pepe pepe </u>pepe pepe 
+			pepe pepe pepe</i> 
+		</p>
+			<a href="Pagina2.html" rel="next" target="_self">
+				Ir a la segunda Página </a>
+		<br/>
+		<br/>
+		
+			<a href="Pagina3.html" rel="next" target="_self">
+				Ir a la tercera Página </a>
+		
+	</body>
+</html>

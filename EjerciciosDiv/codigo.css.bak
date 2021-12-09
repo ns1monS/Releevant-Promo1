@@ -1,0 +1,75 @@
+.o{
+border: 20px solid blue;
+background-color: lightblue;
+height: 150px;
+margin: 20px;
+text-align: right;
+}
+.p{
+border: 2px blue;
+background-color: blue;
+height: 150px;
+margin: 20px;
+text-align: right;
+}
+.t{
+border: 2px red;
+background-color: red;
+height: 150px;
+margin: 20px;
+text-align: right;
+}
+.main {
+border: 5px solid red;
+background-color: lightcoral;
+text-align: center;
+}
+.base-container {
+border: 2px solid green;
+background-color: lightgreen;
+text-align: center;
+}
+.base-span {
+color: green;
+}
+#footer {
+border: 2px solid yellow;
+background-color: lightyellow;
+text-align: center;
+}
+.hola {
+color: yellow;
+size: 5;
+}
+.adios {
+color: green;
+font-size: 9px;
+text-align: left;
+}
+#header {
+	color: yellow ;
+	font-size: 30px;
+	background-color: ffe04c;
+	border: 2px solid yellow;
+}
+#main-content {
+	font-size: 30px ;
+	font-weight: bolder;
+	color: yellow;
+}
+.one {
+	text-align: left;
+	float: left;
+	
+}
+.2 {
+	text-align: middle;
+	float: center;
+	margin-left: 30%;
+}
+.three {
+	text-align: right;
+	float: right;
+	border:5px solid black;
+	
+}
