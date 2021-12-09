@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+	</head>
+	<body>
+		<form>
+			<p> Introduzca nombre </p>
+			<input 
+				type="text" name="nombre"
+			>
+			<p> Introduzca apellidos </p>
+			<input 
+				type="text" name="apellidos"
+			>
+			<input 
+				type="hidden" name="oculto"
+			>
+			<p> Explique su idea </p>
+			 <textarea  
+				 name="observaciones" id="observaciones" 
+				 rows="8" cols="50">formulario
+			 </textarea>
+			<p> Intentaron poner en marcha su idea alguna vez? </p>	
+			<input 
+				type="checkbox" name="SI" value="SI"
+				checked>SI<br> 
+			<input 
+				type="checkbox" name="NO" 
+				value="NO"> NO
+			<p>suba documentación </p>
+			<input 
+				type="file" name="archivo"
+			>
+			<p> Quieres añadir mas información </p>
+			<select name="info" id="info">
+				<option value="si" selected>si</option>
+				<option value="no">no</option>
+			</select>
+			
+		</form>
+	</body>
+</html>

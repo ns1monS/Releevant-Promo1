@@ -1,0 +1,14 @@
+#heared{
+}
+#main {
+	width: 960px;
+	text-align:center;
+	
+}
+.list {
+}
+
+h1{
+	text-align: center;
+}
+.contenido

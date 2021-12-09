@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> Imagenes </title>
+	</head>
+	
+	<body>
+		
+		<img src="download.jpg"
+			alt="Texto alternativo a la imagen"
+			width="50%"
+			height="auto" 
+			align="left"/> 
+			
+		<img src="download.jpg"
+			alt="Texto alternativo a la imagen"
+			width="50%" 
+			height="auto" 
+			align="right"/> 
+	</body>
+</html>
+			

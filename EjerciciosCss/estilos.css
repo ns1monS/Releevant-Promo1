@@ -1,0 +1,31 @@
+
+
+.primero {
+  border-top-width: 2px;
+  border-top-color: yellow;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color:blue;
+  border-bottom-style: solid;
+}
+
+.segundo {
+  border-left-width: 2px;
+  border-left-color: red;
+  border-left-style: solid;	
+   border-right-width: 2px;
+  border-right-color: blue;
+  border-right-style: solid;
+}
+
+.uno {
+	color: red ;
+}	
+
+.subrayado {
+	text-decoration: underline;
+	
+}
+.negra {
+font-weight:bold;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> EjerciciosTablas2.3 </title>
+	</head>
+	<body>
+
+		<h2>Ejercicio4</h2>
+
+		<table	border="4"
+				cellpadding=""
+				cellspacing=""
+				width="auto%"
+				height="auto%"
+				align=""
+				bgcolor=""
+				background=""
+				
+		>
+				<tbody>
+				  <tr>
+					<th rowspan="3" width="200px" height="200px" bgcolor="blue"></th>
+					<th rowspan="3"width="200px" height="200px"bgcolor="white" ></th>
+					<th rowspan="3"width="200px" height="200px"bgcolor="red"></th>
+				  </tr>
+				</tbody>
+		</table>
+		<br/><br/><br/>
+		<table	border="4"
+				cellpadding=""
+				cellspacing=""
+				width="auto%"
+				height="auto%"
+				align=""
+				bgcolor=""
+				background=""
+				
+		>
+				<tbody>
+				  <tr>
+					<th rowspan="3" width="200px" height="200px" bgcolor="green"></th>
+					<th rowspan="3"width="200px" height="200px"bgcolor="white" ></th>
+					<th rowspan="3"width="200px" height="200px"bgcolor="red"></th>
+				  </tr>
+				</tbody>
+		</table>
+
+		<p></p>
+
+	</body>
+</html>
