@@ -1,0 +1,10 @@
+
+.primero {
+border:red 2px solid;
+text-align:center ;
+}
+
+.segundo {
+border-color: green ;
+border:green 2px solid ;
+}

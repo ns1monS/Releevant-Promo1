@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> EjerciciosListas7</title>
+	</head>
+	<body>
+	<dl>
+		no se que lista es esta
+		<ol type="I">
+			la lista je
+			<ol>
+				La otra lista ja
+				<ul> 
+					La otra lista jo
+				</ul>
+			</ol>
+		</ol>
+	</dl>
+		
+	</body>
+</html>

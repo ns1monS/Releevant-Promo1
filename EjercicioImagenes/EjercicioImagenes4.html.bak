@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> Ejercicio1Imagenes </title>
+	</head>
+	
+	<body>
+		<a href="https://www.tiendanimal.es/" rel="next" target"=_blank">
+		<img src="download.jpg"
+			alt="Texto alternativo a la imagen"
+			width="50%"
+			height="auto" 
+			align="left"/> </a>
+			
+		<a href="https://www.feelcats.com/gatos-bonitos/" rel="next" target"=_blank">
+		<img src="download.jpg"
+			alt="Texto alternativo a la imagen"
+			width="50%"
+			height="auto" 
+			align="left"/> </a>
+	</body>
+</html>

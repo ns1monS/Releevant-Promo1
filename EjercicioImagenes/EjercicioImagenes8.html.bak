@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> Ejercicio6Imagenes </title>
+	</head>
+	
+	<body>
+		<a href="Documento.pdf" rel="next" target="_blank">
+			<img src="download.jpg"
+				alt="Texto alternativo a la imagen"
+				width="50%"
+				height="auto" 
+				align="left"/> 
+		</a>
+		<a href="mailto:noelsimonaguilarj@gmail.com" rel="next" target="_blank">
+			<img src="download.jpg"
+				alt="Texto alternativo a la imagen"
+				width="50%"
+				height="auto" 
+				align="left"/> 
+		</a>
+		<a 	href="" rel="next" target="_blank">
+			<img src="download.jpg"
+				alt="Texto alternativo a la imagen"
+				width="50%"
+				height="auto" 
+				align="left"/> 
+		</a>
+		
+	</body>
+</html>
