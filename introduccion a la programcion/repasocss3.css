@@ -1,0 +1,32 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#datos {
+  width: 25%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+#principal {
+  float: left;
+  width: 75%;
+  padding: 0;
+  margin: 0;
+}
+
+#contenido {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contenido li {
+  float: left;
+  width: 33%;
+}
