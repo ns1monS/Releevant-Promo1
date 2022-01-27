@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>inicio</title>
+</head>
+<body>
+    <div >
+        <h3>Ecommerce</h3>
+      </div>
+    <div class="topnav">
+        <a class="active" href="#home">Iniciar sesion</a>
+        <a href="#contact"><a href=nuevo-producto.html >nuevo producto</a></a>
+        <a href="#about"><a href= registro.html>Registrarse</a>
+      </div>
+
+
+      <form action="action_page.php" method="post">
+        
+        <div class="container">
+          <label for="correoElectronico"><b>correo Electronico</b></label>
+          <input type="text" placeholder="Enter Username" name="correoElectronico" required>
+      
+          <label for="passwordg"><b>Contraseña</b></label>
+          <input type="password" placeholder="Enter Password" name="passwordg" required>
+      
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>  
+        </div>
+        
+      </form>
+      <button onclick="login()"type="submit">Entrar</button>
+</body>
+      <script src="conection.js"> </script>
+</html> 
