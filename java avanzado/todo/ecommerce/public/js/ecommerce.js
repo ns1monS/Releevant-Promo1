@@ -32,9 +32,10 @@ function init() {
 
 }
 
-function registro() {
+function submit() {
   let nombre = document.getElementById("nombre").value;
-  let email = document.getElementById("correo").value;
+  let apellido = document.getElementById("apellido").value;
+  let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let telefono = document.getElementById("telefono").value;
   let direccion = document.getElementById("direccion").value;
@@ -49,6 +50,7 @@ function registro() {
 
   let url = "http://localhost:8080/crearusuarioget";
   url += "/" + nombre;
+  url += "/" + apellido;
   url += "/" + email;
   url += "/" + password;
   url += "/" + telefono;
@@ -58,54 +60,3 @@ function registro() {
   xhttp.open("GET", url, true);
   xhttp.send();
 }
-
-function registrarProducto() {
-  let nombre = document.getElementById("nombre").value;
-  let precio = document.getElementById("precio").value;
-  let categoria = document.getElementById("categoria").value;
-
-  let xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText);
-    }
-  };
-
-  let url = "http://localhost:8080/crearproducto";
-  url += "?nombre=" + nombre;
-  url += "&precio=" + precio;
-  url += "&categoria=" + categoria;
-
-  
-  xhttp.open("GET", url, true);
-  xhttp.send();
-}
-
-
-function login() {
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
-
-  let xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText);
-    }
-  };
-
-  let url = ("http://localhost:8080/login"  );
-  url += "?email=" + email;
-  url += "&password=" + password;
-
-  const  data = {
-      "usuario": nombreUsuario,
-      "apellidos": apellidosUsuario,
-      "password": passwordUsuario
-  }
-
-
-
-  xhttp.open("POST", url, true);
-  xhttp.setRequestHeader("Content-Type", "aplication/json");
-  xhttp.send(JSON.stringify(data));
-}         

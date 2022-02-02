@@ -1,20 +1,35 @@
-/* let mysql = require(`mysql`);
+let mysql = require(`mysql`);
 
-let conexion = mysql.createConnection({
+function conectar() {
+    
+}
+
+    connection = mysql.createConnection({
     host: `localhost`,
     database: `ecommerce`,
     user: `root`,
-    password: ``
-})
+    password: `releevant`
+});
 
-conexion.connect({function(error) {
-    if (error){
-        return error;
+connection.connect({function(error) {
+    if (err){
+        return console.log(`error: ` + err.message);
     }else {
         console.log(`Conexion Exitosa`);
     }
-}})
-*/
+}});
+
+
+function desconectar() {
+    connection.end(function(err) {
+        if(err){
+            return console.error("Error:" + err.message);
+        }
+
+        console.log("Desconectado")
+        
+    })
+}
 
 
 function registro() {
