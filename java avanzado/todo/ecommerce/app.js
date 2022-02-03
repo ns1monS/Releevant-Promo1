@@ -35,7 +35,7 @@ function obtener(consulta, callback) {
 }
 
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.json())
 app.get("/productos", function (req, res) {
   conectar();
   obtener("SELECT * FROM productos", function (results) {
@@ -99,7 +99,9 @@ app.get(
       "insert into usuarios (nombre,email, password, telefono, direccion, metodo_pago) values (?, ?, ?, ?, ?, ?)",
       [nombre, email, password, telefono, direccion, metodo_pago],
       function (error, results, fields) {
-        console.log(error)
+        if (err){
+          response.send("error de login");
+        }
         res.send(
           "Ok Get: " +
             nombre +
@@ -143,7 +145,7 @@ function desconectar() {
     }
 
     console.log("Desconectado!");
-  });
+  }); 
 }
 
 
@@ -177,11 +179,11 @@ app.get(
   }
 );
 
-app.get(
+app.post(
   "/login",
   function (request, response) {
-    let email = request.query.email;
-    let password = request.query.password;
+    let email = request.body.email;
+    let password = request.body.password;
 
     conectar();
 
@@ -204,6 +206,16 @@ app.get(
     desconectar();
   }
 );
+
+
+
+
+
+
+
+
+
+
 
 
 

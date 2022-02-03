@@ -94,18 +94,27 @@ function login() {
   };
 
   let url = ("http://localhost:8080/login"  );
-  url += "?email=" + email;
+  /*url += "?email=" + email;
   url += "&password=" + password;
+  */
 
   const  data = {
-      "usuario": nombreUsuario,
-      "apellidos": apellidosUsuario,
-      "password": passwordUsuario
+      "email": email,
+      "password": password
   }
 
 
 
   xhttp.open("POST", url, true);
-  xhttp.setRequestHeader("Content-Type", "aplication/json");
+  xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send(JSON.stringify(data));
 }         
+
+function clickButton (){
+  console.log("boton");
+}
+
+function comprar(){
+
+}
+
