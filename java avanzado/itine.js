@@ -22,7 +22,7 @@ function init(){
 */
 let a = [1,2,3,4,5,6]
 let range = {
-    from: 0,
+    from: 0 ,
     to: 6,
   };
   
