@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 function init(npag){
     let ulElement = document.getElementById("lista-ultimos-usuarios");
     let paginacionElement = document.getElementById("paginacion");
     let numUsuarios = 10;
 
 let xhttp = new XMLHttpRequest();
+=======
+function init(){
+    let ulElement = document.getElementById("lista-ultimos-usuarios");
+    let numUsuarios = 10;
+
+let xhttp=new XMLHttpRequest();
+>>>>>>> principal
 xhttp.onreadystatechange =function(){
 if (this.readyState == 4 & this.status ==200){
     let usuarios = JSON.parse(this.responseText);
@@ -18,13 +26,18 @@ if (this.readyState == 4 & this.status ==200){
           usuario.firstName +
           " - " +
           usuario.lastName +
+<<<<<<< HEAD
           " - <a href='dumpy.html'> <img src='" +
+=======
+          " - <img src='" +
+>>>>>>> principal
           usuario.picture +
           "'width='50'/>" +
           "</li>";
         }
 
         let paginacion = "";
+<<<<<<< HEAD
         for (let index = 1; index <= usuarios.total / usuarios.limit ; index++) {
             paginacion += `<a href="#" onclick="pagina(${index})">${index}</a>` ;           
         }
@@ -91,3 +104,20 @@ function userInit() {
     xhttp.send();
 
 }
+=======
+        for (let index = 1; index <= usuarios.total / ususarios.limit ; index++) {
+            paginacion += `a href="#", ` ;           
+        }
+        paginacion += parseInt(usuarios.total / usuarios.limit) +  1;
+        paginacionElement.innerHTML = paginacion
+    }
+}
+
+let url= "https://dummyapi.io/data/v1/user?limit=" +numUsuarios;
+xhttp.open("GET", url, true);
+xhttp.setRequestHeader("app-id", "6201760cca6cf7776aa95c4a");
+xhttp.send();
+
+
+};
+>>>>>>> principal
