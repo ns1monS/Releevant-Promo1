@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=b">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dumpy.css" rel="stylesheet" type="text/css">
+    <title>login</title>
     <script src="ejappi.js"></script>
 </head>
 
-<body onload="register()">
-    <h1>Registro</h1>
+<body>
+    
+    <div class="topnav">
+        <a href="index.html">Inicio</a>
+        <a class="active"  href="registro.html">Nuevo miembro</a>
+    </div>
+
+    <h1>Formulario de Registro</h1>
     <form>
+
+        <select name="desplegable" id="title">
+            <option value="mr">Mr</option> 
+            <option value="ms">Ms</option>  
+        </select>
+
+
         <ul>
         <label><b>firstName</b></label>
         <input id="firstName" type="text" placeholder="firstName">
+
         <label ><b>lastName</b></label>
         <input id="lastName" type="text" placeholder="lastName">
+
         <label ><b>gender</b></label>    
-        <input id="gender" type="email" placeholder="gender">
+        <input id="gender" type="text" placeholder="gender">
+
         <label><b></b></label>
         <input id="email" type="text" placeholder="email">
+
         <label><b>dateOfBirth</b></label>
         <input id="dateOfBirth" type="text" placeholder="dateOfBirth">
+
         <label><b>registerDate</b></label>
         <input id="registerDate" type="text" placeholder="registerDate">
+
         <label><b>phone</b></label>
         <input id="phone" type="text" placeholder="phone">
+
     </ul>
                     <p>Location</p>
-                    <ul>
+     <ul>
 
         <label><b>city</b></label>
         <input id="city" type="text" placeholder="city">
+
         <label><b>country</b></label>
         <input id="country" type="text" placeholder="country">
+
         <label><b>timezone</b></label>
         <input id="timezone" type="text" placeholder="timezone">
+
         <label><b>picture</b></label>
         <input id="picture" type="text" placeholder="picture">
-                    </ul>
+      </ul>
 
     </form>
-    <button type="submit"onclick="updateInfo()">Entrar</button>
+
+    <button onclick="register()" type="submit" class="registerbtn">Registrar</button>
 </body>
 </html>

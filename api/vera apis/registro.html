@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="ejapi.js"></script>
+
+    <title>Tinder</title>
+</head>
+<body>
+    <div id="header">
+        <img src="logo-tinder.png" alt="logo-tinder" width="255" height="150">
+    </div>
+    <div class="topnav">
+        <a href="index.html">Inicio</a>
+        <a class="active"  href="registro.html">Nuevo miembro</a>
+    </div>
+        <hr>
+    <form>
+        <p>Formulario de Registro</p>
+        <hr>
+    
+        <select name="desplegable" id="title">
+            <option value="mr">Mr</option> 
+            <option value="ms">Ms</option>  
+        </select>
+
+    </br>
+    </br>
+
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" placeholder="Introduce tu nombre" name="nombre" id="nombre" required>
+
+        <label for="apellido"><b>Apellido</b></label>
+        <input type="text" placeholder="Introduce tu apellido" name="apellido" id="apellido" required>
+
+        <label for="genero"><b>genero</b></label>
+        <input type="text" placeholder="Introduce tu genero" name="genero" id="genero" required>
+
+        <label for="cumple"><b>Fecha de Nacimiento</b></label>
+        <input type="text" placeholder="Introduce tu fecha de Nacimiento" name="cumple" id="fecha-cumpleaños" required>
+
+        <label for="registro"><b>Fecha de Registro</b></label>
+        <input type="text" placeholder="Introduce la fecha de registro" name="registro" id="fecha-registro" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Introduce un Email de contacto" name="email" id="email" required>
+
+        <label for="tlf"><b>Teléfono</b></label>
+        <input type="text" placeholder="Introduce tu numero de telefono" name="tlf" id="telefono" required>
+
+        <label for="region"><b>Región</b></label>
+        <input type="text" placeholder="Introduce tu region" name="region" id="region" required>
+        
+        <label for="direccion"><b>Dirección</b></label>
+        <input type="text" placeholder="Introduce tu direccion" name="direccion" id="direccion" required>
+
+        <label for="ciudad"><b>Ciudad</b></label>
+        <input type="text" placeholder="Introduce tu ciudad" name="ciudad" id="ciudad" required>
+
+        <label for="provincia"><b>Provincia</b></label>
+        <input type="text" placeholder="Introduce tu provincia" name="provincia" id="provincia" required>
+
+        <label for="zona-horaria"><b>Zona Horaria</b></label>
+        <input type="text" placeholder="Introduce tu zona horaria" name="zona-horaria" id="zona-horaria" required>
+
+    <hr>
+
+        <label for="img"><b>Imagen</b></label>
+        <input type="text" placeholder="Introduce la URL de la imagen" name="imagen" id="imagen" required>
+
+        <hr>
+    
+        <p>Creando una cuenta acepta nuestros <a href="https://c.tenor.com/f68_axSwkloAAAAC/borpa-borpaspin.gif">Terminos & Privacidad</a>.</p>
+        
+    </form>
+        <button onclick="registroUsuario()" type="submit" class="registerbtn">Registrar</button>
+</body>
+</html>
