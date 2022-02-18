@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src='/js/ecommercejs.js'></script>
+    <title>inicio</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <form>
+            <div class="container">
+              <label><b>Nombre de Usuario</b></label>
+              <input id="nombre" type="text" placeholder="Introduce Nombre de Usuario">
+              <label ><b>Correo Electónico</b></label>
+              <input id="correo" type="text" placeholder="Introduce correo electrónico">
+              <label ><b>Direccion</b></label>
+              <input id="direccion"type="text" placeholder="Introduce Direccion" >
+              <label><b>Metodo de Pago</b></label>
+              <input id="metodo_pago"type="text" placeholder="Introduce metodo de pago" >
+              <label ><b>Telefono</b></label>
+              <input id="telefono" type="text" placeholder="Introduce telefono" >
+              <label ><b>Contraseña</b></label>
+              <input id="password"type="password" placeholder="Introducir Contraseña" >
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Recordarme
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <span class="psw">Se te olvido la <a href="#">contraseña?</a></span>
+            </div>
+          </form>
+          <button type="submit"onclick="registro()">Entrar</button>
+        </body>
+        <script src="js/ecommercejs.js"> </script>
+</html>
