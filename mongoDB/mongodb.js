@@ -120,6 +120,8 @@ conectar(function () {
   })
 })
 
+// Ejercicio 7
+
 
 
 client

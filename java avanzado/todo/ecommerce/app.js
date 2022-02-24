@@ -1,87 +1,104 @@
+const { MongoClient, CURSOR_FLAGS } = require("mongodb");
 const express = require("express");
 const path = require("path");
-const app = express();
-const mysql = require("mysql");
+const res = require("express/lib/response");
 const { response } = require("express");
+const app = express();
 
-let connection;
 
-function conectar() {
-  // CREAR CONEXION A L ABASE DE DATOS.
-  connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "noel",
-    database: "ecommerce",
-  });
+const client = new MongoClient("mongodb://localhost:27017");
 
-  connection.connect(function (err) {
-    if (err) {
-      return console.error("error:" + err.message);
-    }
 
-    console.log("connected to the MySQL server.");
-  });
+async function conectar() {
+  await client.connect()
 }
 
-function obtener(consulta, callback) {
-  connection.query(consulta, function (err, results, fields) {
-    if (err) {
-      return console.error("error: " + err.message);
-    }
+//  async function desconectar (callback, error){
+//   await client.connect()
+// }
 
-    callback(results);
-  });
-}
+
+
+
+   function obtener(collection, filtro,execute,callback,error,sort = {}, limit = 0) {
+    client.db("ecommerce").collection(collection)
+    
+            .find(filtro)
+            .sort(sort)
+            .limit(limit)
+            .forEach(execute)
+            .then(callback)
+            .catch(error)         
+};
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json())
-app.get("/productos", function (req, res) {
-  conectar();
-  obtener("SELECT * FROM productos", function (results) {
-    let productos = "";
 
-    for (let i = 0; i < results.length; i++) {
-      productos +=
-        "<li>" +
-        results[i].nombre +
-        ", " +
-        results[i].precio +
-        "€, " +
-        results[i].stock +
-        " en stock</li>";
-    }
-    res.send(productos);
+app.get('/test',function(request,response){
+  conectar();
+   console.log("Conectado a MongoDB");
+
+   let results = new Array();
+  obtener("ventas", {}, function(e){
+      results.push({nombre: e.producto.nombre, cantidad: e.producto.cantidad})
+  }, function (){
+    response.send(results);
+  },
+  function () {
+    response.send(error)
+  })
+});
+
+
+
+app.get("/productos", function (request, response) {
+  conectar();
+
+  let productos = "" 
+  obtener("productos", {},function (results) {
+    productos +=
+    "<li>" +
+    results.nombre +
+    ", " +
+    results.precio +
+    "€, " +
+    results.stock +
+    " en stock</li>";
+  
+  }, function(){
+    response.send(productos)
+  }, function(){
+    response.send("Error");
   });
 
-  desconectar();
 });
 
-app.get("/masgasto", function (req, res) {
-  conectar();
-  obtener(
-    "select id_usuario, sum(precio * cantidad) as total from ventas group by id_usuario order by total desc limit 1;",
-    function (results) {
-      let usuario =
-        "<p>El usuario que m&aacute;s ha gastado es el de id " +
-        results[0].id_usuario +
-        ", se ha gastado " +
-        results[0].total +
-        "€</p>";
+app.get("/masgasto", function (request, response) {
+});
+app.get("/masproductos", function (req, response) {
+  let sugarDaddy = new Map();
 
-      res.send(usuario);
+conectar()
+  obtener( "ventas", {}, function(ventas) {
+
+   if (sugarDaddy.has(ventas.usuario.nombre)){
+      sugarDaddy.set(ventas.usuario.nombre, sugarDaddy.get(ventas.usuario.nombre)+ ventas.precio);
+   }else {
+      sugarDaddy.set(ventas.usuario.nombre,  ventas.precio);
+   }
+  }, 
+  function () {
+    let max = ["",0];
+    for (const usuario of sugarDaddy) {
+      if (usuario[1] > max[1]) {
+        max = usuario;
+      }
+
     }
-  );
-
-  desconectar();
+    response.send(max)
+  })
 });
 
-app.get("/masproductos", function (req, res) {
-  let usuarios =
-    "<p>Los usuarios que m&aacute;s productos han comprado son:</p><li>Claudia Semper</li><li>Jose Alcala</li><li>Maria Perez</li>";
-
-  res.send(usuarios);
-});
 
 app.get(
   "/crearusuarioget/:nombre/:email/:password/:telefono/:direccion/:metodo_pago",
@@ -137,16 +154,7 @@ app.get("/crearusuariopost", function (request, res) {
   res.send("Ok Post");
 });
 
-function desconectar() {
-  //CERRAR CONEXIÓN CON EL SERVIDOR.
-  connection.end(function (err) {
-    if (err) {
-      return console.error("Error:" + err.message);
-    }
 
-    console.log("Desconectado!");
-  }); 
-}
 
 
 app.get(
