@@ -12,6 +12,15 @@ import{count
 
 
 
+// describe("Prueba Técnica",() =>{
+//     it ("Contar 5 elementos",() =>{
+//         mainpage();
+//         navigate();
+//         count();
+//     })
+
+// })
+
 describe("acceder a la página", () =>{
     mainpage(()=>{
     
