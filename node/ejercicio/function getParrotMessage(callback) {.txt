@@ -1,0 +1,17 @@
+function getParrotMessage(callback) {
+  getWord("result", function (err, result) {
+    if (err || !result.length) return callback("error or no results");
+    // since result is array of objects [{word: 'someword'},{word: 'someword2'}] let's remap it
+    result = result.map((obj) => obj.word);
+    // result should now look like ['someword','someword2']
+    // return it
+    callback(null, result);
+  });
+}
+
+function getWord(word, callback) {
+  con.query("SELECT * FROM word_table", function (err, rows) {
+    if (err) return callback(err);
+    callback(null, rows);
+  });
+}
